@@ -5,7 +5,10 @@ import org.bukkit.event.Listener;
 public class Listeners implements Listener {
   
   @EventHandler
-  public void onRightClick(MouseEvent.RIGHT_CLICK e) {
-    
+  public void onPlayerInteractEntity(PlayerInteractEntityEvent e) {
+    Player target = Bukkit.getServer().getEntity()
+    if () {
+      e.setCancelled(true);
+    }
   }
 }
