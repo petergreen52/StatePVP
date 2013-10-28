@@ -20,7 +20,10 @@ public class StatePVP extends JavaPlugin {
 	}
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-		if (cmd.getName().equalsIgnoreCase("spvp") || cmd.getName().equalsIgnoreCase("spvp help")) {
+		if (cmd.getName().equalsIgnoreCase("spvp")) {
+			return CommandMain.command(sender, cmd, label, args);
+		}
+		if (cmd.getName().equalsIgnoreCase("spvp help")) {
 			return CommandHelp.command(sender, cmd, label, args);
 		}
 		if (cmd.getName().equalsIgnoreCase("spvp join")) {
