@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 
 public class CommandHelp {
 	
-	private final static String PERMISSION = "spvp.help";
+	private static final String PERMISSION = "spvp.help";
 	
 	public static boolean command(CommandSender sender, Command cmd, String label, String[] args) {
 		if (sender instanceof Player) {
