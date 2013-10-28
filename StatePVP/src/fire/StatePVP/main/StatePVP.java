@@ -23,6 +23,9 @@ public class StatePVP extends JavaPlugin {
 		if (cmd.getName().equalsIgnoreCase("spvp") || cmd.getName().equalsIgnoreCase("spvp help")) {
 			return CommandHelp.command(sender, cmd, label, args);
 		}
+		if (cmd.getName().equalsIgnoreCase("spvp join")) {
+			return CommandJoin.command(sender, cmd, label, args);
+		}
 		return false;
 	}
 }
