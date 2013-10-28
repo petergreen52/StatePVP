@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 
 public class CommandJoin {
 	
-	private final String PERMISSION = "spvp.join";
+	private static final String PERMISSION = "spvp.join";
 	
 	public static boolean command(CommandSender sender, Command cmd, String label, String[] args) {
 		if (sender instanceof Player) {
@@ -22,12 +22,12 @@ public class CommandJoin {
 		}
 	}
 	
-	private boolean commandPlayer(CommandSender p, Command cmd, String label, String[] args) {
+	private static boolean commandPlayer(CommandSender p, Command cmd, String label, String[] args) {
 		
 		return false;
 	}
 	
-	private boolean commandConsole(CommandSender sender, Command cmd, String label, String[] args) {
+	private static boolean commandConsole(CommandSender sender, Command cmd, String label, String[] args) {
 		
 		return false;
 	}
