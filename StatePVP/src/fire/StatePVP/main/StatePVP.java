@@ -16,7 +16,7 @@ public class StatePVP extends JavaPlugin {
 	}
 	
 	public void onDisable() {
-		
+		Bukkit.getServer().getLogger().info("[StatePVP] Disabled");
 	}
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
