@@ -9,19 +9,20 @@ public class CommandJoin {
 	
 	private final String PERMISSION = "spvp.join";
 	
-	public CommandJoin(CommandSender sender, Command cmd, String label, String[] args) {
+	public static boolean command(CommandSender sender, Command cmd, String label, String[] args) {
 		if (sender instanceof Player) {
 			if (sender.hasPermission(PERMISSION)) {
-				commandPlayer(sender, cmd, label, args);
+				return commandPlayer(sender, cmd, label, args);
 			} else {
 				sender.sendMessage(ChatColor.RED + "You don't have permission to use this command.");
+				return false;
 			}
 		} else {
-			commandConsole(sender, cmd, label, args);
+			return commandConsole(sender, cmd, label, args);
 		}
 	}
 	
-	private boolean commandPlayer(CommandSender sender, Command cmd, String label, String[] args) {
+	private boolean commandPlayer(CommandSender p, Command cmd, String label, String[] args) {
 		
 		return false;
 	}
