@@ -27,7 +27,7 @@ public class StatePVP extends JavaPlugin {
 			return CommandJoin.command(sender, cmd, label, args);
 		}
 		if (cmd.getName().equalsIgnoreCase("spvp leave")) {
-			//return CommandLeave.command(sender, cmd, label, args);
+			return CommandLeave.command(sender, cmd, label, args);
 		}
 		return false;
 	}
